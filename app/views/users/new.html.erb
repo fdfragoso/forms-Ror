@@ -3,20 +3,20 @@
       <li><%= error %></li>
     <% end %>
 </ul>
-<form action="/users" method="POST">
-<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+<%= form_tag '/users',  method: :post do %>
+    <%= hidden_field_tag 'authenticity_token' %>
   <div class="form-group">
-  <label for="username">User name:</label>
-  <input type="text" id="username" name="user[username]">
+  <%= label_tag 'username', 'Username' %>
+  <%= text_field_tag "user[username]" %>
   </div>
   <div class="form-group">
-  <label for="email">Email name:</label>
-  <input type="email" id="email" name="user[email]"> </div>
+  <%= label_tag 'email', 'Email' %>
+  <%= email_field_tag 'user[email]' %>
+  </div>
   <div class="form-group">
-  <label for="password">Password name:</label>
-  <input type="password" id="password" name="user[password]">
+  <%= label_tag 'password', 'Password' %>
+  <%= password_field_tag 'user[password]'%>
   </div>
-  <div class="form-group"> 
-  <input type="submit" value="Create User">
-  </div>
-</form>
+  <%= submit_tag 'Create User' %>
+  <% end %>
+
