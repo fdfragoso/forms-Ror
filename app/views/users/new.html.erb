@@ -7,14 +7,14 @@
 <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <div class="form-group">
   <label for="username">User name:</label>
-  <input type="text" id="username" name="username">
+  <input type="text" id="username" name="user[username]">
   </div>
   <div class="form-group">
   <label for="email">Email name:</label>
-  <input type="email" id="email" name="email"> </div>
+  <input type="email" id="email" name="user[email]"> </div>
   <div class="form-group">
   <label for="password">Password name:</label>
-  <input type="password" id="password" name="password">
+  <input type="password" id="password" name="user[password]">
   </div>
   <div class="form-group"> 
   <input type="submit" value="Create User">
