@@ -5,10 +5,21 @@
 </ul>
 
 <%= form_for(@user) do |f| %>
-  User name: <%= f.text_field :username, placeholder: "Your user name here" %><br />
-  Email: <%= f.email_field :email, placeholder: "example@example.com"%><br />
-  Password: <%= f.password_field :password %><br />
+  <div class="form-group">
+  <%= f.label "User name: "%>
+  <%= f.text_field :username, placeholder: "Your user name here" %>
+  </div>
+  <div class="form-group">
+  <%= f.label "Email: "%>
+  <%= f.email_field :email, placeholder: "example@example.com"%>
+  </div>
+  <div class="form-group">
+  <%= f.label "Password:"%>
+  <%= f.password_field :password %><br />
+  </div>
+  <div class="form-group">
   <%= f.submit "Create User" %>
+  </div>
 <% end %>
 
 <!--
