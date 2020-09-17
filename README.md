@@ -1,24 +1,52 @@
-# README
+# RE-FORMER
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is part of the Forms Project in [The Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/forms)’s Ruby on Rails Curriculum.
 
-Things you may want to cover:
+## Required installations
+This app requires the following packages to be installed on you system:
 
-* Ruby version
+* Ruby 2.7.0
+* Rails 6.0.3.2
 
-* System dependencies
+## Setup configurations
 
-* Configuration
+To get this app ready to run, follow this steps:
 
-* Database creation
+* clone this repo
 
-* Database initialization
+        pc:~$ git clone git@github.com:fdfragoso/forms-Ror.git
 
-* How to run the test suite
+* install require gems
 
-* Services (job queues, cache servers, search engines, etc.)
+        pc:~$ bundle install
 
-* Deployment instructions
+* Run database migration
 
-* ...
+        pc:~$ rails db:migrate
+
+* Start the rails' server to test
+
+        pc:~$ rails server
+
+## Author
+
+👤 **Kedir Abdurahman**
+- Github: [@keddo](https://github.com/keddo)
+- Twitter: [@kedirman](https://twitter.com/kedirman)
+- Linkedin: [Kedir Abdurahman](https://linkedin.com/in/kedirabdurahman/) 
+
+
+👤 **Felipe Dacal Fragoso**
+
+- Github: [@fdfragoso](https://github.com/fdfragoso)
+- Twitter: [@fdfragoso](https://twitter.com/fdfragoso)
+- Linkedin: [@fdfragoso](https://www.linkedin.com/in/fdfragoso/)
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Project inspired by Microverse Program
+- Project originally taken from the odin project
